@@ -1,5 +1,6 @@
 import { ThemeModeToggler } from '@/components/shared/theme-toggler';
 import { Button } from '@workspace/ui/components/button';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
         <h1 className='text-2xl font-bold'>Admin App (Private)</h1>
         <Button size='sm'>Button</Button>
         <ThemeModeToggler />
+        <Link href={'/login'}>Login</Link>
       </div>
     </div>
   );
