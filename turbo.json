@@ -43,7 +43,8 @@
         "!.next/cache/**"
       ],
       "env": [
-        "API_URL"
+        "API_URL",
+        "NODE_ENV"
       ]
     },
     "backend#build": {

@@ -3,6 +3,7 @@ import { Geist_Mono, Manrope } from 'next/font/google';
 import '@workspace/ui/globals.css';
 // import { ThemeProvider } from '@workspace/ui/providers/theme-provider';
 import { Providers } from '@/components/providers';
+import { Toaster } from '@workspace/ui/components/sonner';
 
 const fontSans = Manrope({
   subsets: ['latin'],
@@ -30,7 +31,10 @@ export default function RootLayout({
           disableTransitionOnChange>
           {children}
         </ThemeProvider> */}
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Toaster richColors closeButton position='top-center' />
+        </Providers>
       </body>
     </html>
   );
