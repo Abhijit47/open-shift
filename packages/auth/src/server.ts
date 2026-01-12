@@ -7,7 +7,7 @@ import {
   openAPI,
 } from 'better-auth/plugins';
 import { config } from 'dotenv';
-import { ac, admin, myCustomRole, user } from './permissions';
+import { ac, admin, myCustomRole, user } from './utils/permissions';
 
 config({ path: '.env.local' });
 
